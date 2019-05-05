@@ -43,9 +43,12 @@
     </table>
     <br>
     <form method="GET">
-      Seminartitel:
-      <input type = "text" name="Seminartitel" size="20" maxlength="30" value="Suche">
-      <input type = "submit" value="Finden">
+      <label>Seminartitel:</label>
+      <input type = "text" name="Seminartitel" size="20" maxlength="30" placeholder="Suche" list="vorschlaege">
+        <datalist id="vorschlaege">
+          <option value="Unternehmensgründung">
+        </datalist>
+      <button type = "submit" >Finden</button>
 
     </form>
     <hr>
