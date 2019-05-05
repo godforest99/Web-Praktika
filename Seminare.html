@@ -6,6 +6,11 @@
 
   <!--Grundaufbau HTML usw...-->
   <meta charset="utf-8">
+  <style media="screen">
+    datalist {
+      display: inline;
+    }
+  </style>
 
 </head>
 
@@ -42,14 +47,14 @@
       </tbody>
     </table>
     <br>
-    <form method="GET">
-      <label>Seminartitel:</label>
-      <input type = "text" name="Seminartitel" size="20" maxlength="30" placeholder="Suche" list="vorschlaege">
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="GET">
+      <label>Seminartitel:
+        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege">
         <datalist id="vorschlaege">
-          <option value="Unternehmensgründung">
+          <option value="Unternehmensgründun">
         </datalist>
-      <button type = "submit" >Finden</button>
-
+      </label>
+      <button type="submit">Finden</button>
     </form>
     <hr>
   </main>
