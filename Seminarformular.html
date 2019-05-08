@@ -20,7 +20,7 @@
   </nav>
   <form action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
     <div>
-      <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[[A-Z][A-Za-z0-9]{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label><br>
+      <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label><br>
     </div>
     <div>
     <label>Seminarleiter:
@@ -44,7 +44,7 @@
       <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label> <br>
     </div>
     <!-- Regex noch nicht ganz richtig! -->
-    <div><label>Tutoren: <input type="text" name="semtutors" pattern="([a-zA-Z]{2,4}\d\,)+|[a-zA-Z]{2,4}\d$" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
+    <div><label>Tutoren: <input type="text" name="semtutors" pattern="[a-zA-Z]{2,4}\d{1}(,{1}[a-zA-Z]{2,4}\d{1})*" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
     <input type="submit" value="Senden">
   </form>
 
