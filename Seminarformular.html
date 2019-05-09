@@ -11,43 +11,53 @@
 
 
 <body>
-  <h1>Anlegen eines Seminares</h1>
+  <header>
+    <figure>
+      <img src="Ressources/byarne.jpeg" alt="Logo" height="100" width="100">
+      <figcaption>Logo</figcaption>
+    </figure>
+  </header>
   <nav>
     <p><a href="Seminare.html">Seminare</a></p>
     <p><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></p>
     <p><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </p>
     <p><a href="Seminarformular.html">Neues Seminar anlegen</a></p>
   </nav>
-  <form action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
-    <div>
-      <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label><br>
-    </div>
-    <div>
-    <label>Seminarleiter:
-      <select name="semlead">
-        <option value="Herr Frenkel">Herr Frenkel</option>
-        <option value="Frau Gröner">Uschi</option>
-        <option value="Herr Rettinger">Herr Rettinger</option>
-      </select>
-    </label> <br>
-    </div>
-    <div>
-      <label>Datum: <input type="date" value="2019-04-27" min="2019-04-27" max="2019-12-31" name="semdate"></label> <br>
-    </div>
-    <div>
-      <label>Start: <input type="time" name="semstart" value="12:00" min="08:00" max="16:00"> </label> <br>
-    </div>
-    <div>
-      <label>Ende: <input type="time" value="13:00" name="semend" min="10:00" max="18:00"> </label> <br>
-    </div>
-    <div>
-      <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label> <br>
-    </div>
-    <!-- Regex noch nicht ganz richtig! -->
-    <div><label>Tutoren: <input type="text" name="semtutors" pattern="[a-zA-Z]{2,4}\d{1}(,{1}[a-zA-Z]{2,4}\d{1})*" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
-    <input type="submit" value="Senden">
-  </form>
-
+  <main>
+    <h1>Anlegen eines Seminares</h1>
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
+      <fieldset>
+        <legend>Seminar</legend>
+      <div>
+        <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label><br>
+      </div>
+      <div>
+      <label>Seminarleiter:
+        <select name="semlead">
+          <option value="Herr Frenkel">Herr Frenkel</option>
+          <option value="Frau Gröner">Uschi</option>
+          <option value="Herr Rettinger">Herr Rettinger</option>
+        </select>
+      </label> <br>
+      </div>
+      <div>
+        <label>Datum: <input type="date" value="2019-04-27" min="2019-04-27" max="2019-12-31" name="semdate"></label> <br>
+      </div>
+      <div>
+        <label>Start: <input type="time" name="semstart" value="12:00" min="08:00" max="16:00"> </label> <br>
+      </div>
+      <div>
+        <label>Ende: <input type="time" value="13:00" name="semend" min="10:00" max="18:00"> </label> <br>
+      </div>
+      <div>
+        <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label> <br>
+      </div>
+      <!-- Regex noch nicht ganz richtig! -->
+      <div><label>Tutoren: <input type="text" name="semtutors" pattern="[a-zA-Z]{2,4}\d{1}(,{1}[a-zA-Z]{2,4}\d{1})*" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
+      </fieldset>
+      <input type="submit" value="Senden">
+    </form>
+  </main>
 
   <footer>&COPY;by Kevin Gottwald & Jannik Will</footer>
 </body>
