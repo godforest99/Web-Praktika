@@ -1,0 +1,12 @@
+
+h1 {color: purple;}
+h2 {color:purple;}
+figcaption{color:purple;}
+input:required{color: rgb(204, 8, 211);}
+:valid{background-color: rgb(134, 255, 140);}
+:invalid{background-color: rgb(252, 115, 115);}
+input:required::after{content:"test";}
+[label*="Titel des Seminars"]::after{content:"test";}
+[title*="Zusatzinfos"]{background-color: lightcoral;}
+* {font-family: Arial;}
+[title*="Email"]::after{content:url(Ressources/index.png)};
