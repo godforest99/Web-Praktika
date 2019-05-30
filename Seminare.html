@@ -7,11 +7,11 @@
   <!--Grundaufbau HTML usw...-->
   <meta charset="utf-8">
   <link rel="stylesheet" type = "text/css" href ="style.css">
-  <style media="screen">
+  <!-- <style media="screen">
     datalist {
       display: inline;
     }
-  </style>
+  </style> -->
 
 </head>
 
@@ -23,15 +23,17 @@
     </figure>
   </header>
   <nav>
-    <p><a href="Seminare.html">Seminare</a></p>
-    <p><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></p>
-    <p><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </p>
-    <p><a href="Seminarformular.html">Neues Seminar anlegen</a></p>
+    <ul>
+      <li><a href="Seminare.html">Seminare</a></li>
+      <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
+      <li><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </li>
+      <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
+    </ul>
   </nav>
   <main>
     <h1>Seminare</h1>
     <h2>Seminarliste</h2>
-    <table>
+    <table id="Seminarliste">
       <thead>
         <tr>
           <th>Titel</th>

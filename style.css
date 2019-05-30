@@ -2,11 +2,34 @@ h1, h2, figcaption {
   color: purple;
 }
 
-section>footer {
-  margin: 3px;
-  padding: 3px;
-  border: 2px dotted;
-  border-width: thick;
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 5px;
+}
+
+header>figure{
+  margin: 0px;
+  padding: 5px;
+}
+
+figcaption {
+  position: absolute;
+  top: 0.10em;
+  left: 1.75em;
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+header {
+  background-color: #D3D3D3;
+}
+
+section {
+  margin-bottom: 15px;
 }
 
 input:required {
@@ -15,6 +38,31 @@ input:required {
 
 input:valid {
   background-color: rgb(134, 255, 140);
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  background-color: grey;
+  height: 35px;
+}
+
+nav>ul {
+  padding: 0px;
+  position: relative;
+  top: 8px;
+  margin: 0px;
+}
+
+nav>ul>li{
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  padding-left: 5px;
+}
+
+nav a {
+  color: white;
 }
 
 input:invalid {
@@ -39,11 +87,19 @@ fieldset label {
   padding-bottom: 5px;
 }
 
+nav>p>a:hover{
+  color: yellow;
+}
+
 /* [label*="Titel des Seminars"]::after { */
   /* content: "test"; */
 /* } */
-footer.Zusatzinfos {
+footer.Zusatzinfos{
   background: lightcoral;
+  margin: 3px;
+  padding: 3px;
+  border: 2px dotted;
+  border-width: thick;
 }
 /* [title*="Zusatzinfos"] { */
   /* background-color: lightcoral; */
@@ -54,6 +110,11 @@ footer.Zusatzinfos {
 }
 
 [title*="Email"]::after {
+  position:absolute;
+  top: 300px;
+  left: 210px;
   content: url(Ressources/index.png);
+  display: inline-block;
+  transform: scale(.2);
 
 }
