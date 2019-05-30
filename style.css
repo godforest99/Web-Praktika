@@ -1,16 +1,8 @@
-h1 {
+h1, h2, figcaption {
   color: purple;
 }
 
-h2 {
-  color: purple;
-}
-
-figcaption {
-  color: purple;
-}
-
-section>footer{
+section>footer {
   margin: 3px;
   padding: 3px;
   border: 2px dotted;
@@ -29,6 +21,15 @@ input:invalid {
   background-color: rgb(252, 115, 115);
 }
 
+fieldset>div {
+  margin: 0.3rem;
+}
+
+/* FIXME: Funktiorniert noch nicht wie ich es mir vorgestellt habe */
+div.required::after {
+  content: " (erforderliche Eingabe)";
+}
+
 fieldset {
   padding: 5px;
   border-radius: 2.5%;
@@ -38,18 +39,21 @@ fieldset label {
   padding-bottom: 5px;
 }
 
-[label*="Titel des Seminars"]::after {
-  content: "test";
+/* [label*="Titel des Seminars"]::after { */
+  /* content: "test"; */
+/* } */
+footer.Zusatzinfos {
+  background: lightcoral;
 }
-
-[title*="Zusatzinfos"] {
-  background-color: lightcoral;
-}
+/* [title*="Zusatzinfos"] { */
+  /* background-color: lightcoral; */
+/* } */
 
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
 
 [title*="Email"]::after {
-  content: url(Ressources/index.png)
+  content: url(Ressources/index.png);
+
 }

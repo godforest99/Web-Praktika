@@ -28,8 +28,8 @@
     <form action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
       <fieldset>
         <legend>Seminar</legend>
-      <div>
-        <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label><br>
+      <div class="required">
+        <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label>
       </div>
       <div>
       <label>Seminarleiter:
@@ -38,21 +38,20 @@
           <option value="Frau Gröner">Uschi</option>
           <option value="Herr Rettinger">Herr Rettinger</option>
         </select>
-      </label> <br>
+      </label>
       </div>
       <div>
-        <label>Datum: <input type="date" value="2019-04-27" min="2019-04-27" max="2019-12-31" name="semdate"></label> <br>
+        <label>Datum: <input type="date" value="2019-04-27" min="2019-04-27" max="2019-12-31" name="semdate"></label>
       </div>
       <div>
-        <label>Start: <input type="time" name="semstart" value="12:00" min="08:00" max="16:00"> </label> <br>
+        <label>Start: <input type="time" name="semstart" value="12:00" min="08:00" max="16:00"> </label>
       </div>
       <div>
-        <label>Ende: <input type="time" value="13:00" name="semend" min="10:00" max="18:00"> </label> <br>
+        <label>Ende: <input type="time" value="13:00" name="semend" min="10:00" max="18:00"> </label>
       </div>
       <div>
-        <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label> <br>
+        <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label> 
       </div>
-      <!-- Regex noch nicht ganz richtig! -->
       <div><label>Tutoren: <input type="text" name="semtutors" pattern="[a-zA-Z]{2,4}\d{1}(,{1}[a-zA-Z]{2,4}\d{1})*" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
       </fieldset>
       <button type="submit">Senden</button>
