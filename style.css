@@ -1,12 +1,55 @@
+h1 {
+  color: purple;
+}
 
-h1 {color: purple;}
-h2 {color:purple;}
-figcaption{color:purple;}
-input:required{color: rgb(204, 8, 211);}
-:valid{background-color: rgb(134, 255, 140);}
-:invalid{background-color: rgb(252, 115, 115);}
-input:required::after{content:"test";}
-[label*="Titel des Seminars"]::after{content:"test";}
-[title*="Zusatzinfos"]{background-color: lightcoral;}
-* {font-family: Arial;}
-[title*="Email"]::after{content:url(Ressources/index.png)};
+h2 {
+  color: purple;
+}
+
+figcaption {
+  color: purple;
+}
+
+section>footer{
+  margin: 3px;
+  padding: 3px;
+  border: 2px dotted;
+  border-width: thick;
+}
+
+input:required {
+  color: rgb(204, 8, 211);
+}
+
+input:valid {
+  background-color: rgb(134, 255, 140);
+}
+
+input:invalid {
+  background-color: rgb(252, 115, 115);
+}
+
+fieldset {
+  padding: 5px;
+  border-radius: 2.5%;
+}
+
+fieldset label {
+  padding-bottom: 5px;
+}
+
+[label*="Titel des Seminars"]::after {
+  content: "test";
+}
+
+[title*="Zusatzinfos"] {
+  background-color: lightcoral;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+[title*="Email"]::after {
+  content: url(Ressources/index.png)
+}
