@@ -49,6 +49,9 @@ header figcaption {
 
 section {
   margin-bottom: 15px;
+  border-left: 5px solid grey;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .copyright {
