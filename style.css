@@ -92,7 +92,7 @@ input:valid {
 .navigationsleiste>ul>li{
   display: inline-block;
   height: 100%;
-  margin-left: 5px;
+  margin-left: 10px;
   /* background-color: #A9A9A9; */
 }
 
