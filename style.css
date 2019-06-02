@@ -115,7 +115,8 @@ fieldset, legend {
 fieldset>legend{
   background-color: blue;
   font-style: italic;
-  color: white
+  color: white;
+  box-shadow: 2px 2px 2px black;
 }
 
 fieldset div {
