@@ -1,5 +1,5 @@
 * {
-  font-family: Arial;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -106,12 +106,19 @@ div.required::after {
   content: " (erforderliche Eingabe)";
 }
 
-fieldset {
+fieldset, legend {
   padding: 5px;
-  border-radius: 2.5%;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
-fieldset label {
+fieldset>legend{
+  background-color: blue;
+  font-style: italic;
+  color: white
+}
+
+fieldset div {
   padding-bottom: 5px;
 }
 
@@ -127,7 +134,6 @@ footer.zusatzinfos{
   margin: 3px;
   padding: 3px;
   border: 2px dotted;
-  border-width: thick;
 }
 /* [title*="Zusatzinfos"] { */
   /* background-color: lightcoral; */
