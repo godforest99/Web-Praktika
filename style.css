@@ -25,13 +25,16 @@ header>figure{
   padding: 5px;
 }
 
-figcaption {
+header figcaption {
   position: absolute;
   top: 0.10em;
   left: 1.75em;
   color: white;
   font-weight: bold;
   font-size: 80px;
+
+  text-shadow: 5px 5px 5px black;
+  letter-spacing: 5px;
 }
 
 #Seminarliste>thead>tr{
