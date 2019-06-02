@@ -89,6 +89,18 @@ input:valid {
   margin: 0px;
 }
 
+#seminarleiterBild {
+  float: right;
+}
+
+.zusatzinfos {
+  clear: both;
+}
+
+.clearBoth {
+  clear: both;
+}
+
 .navigationsleiste>ul>li{
   display: inline-block;
   height: 100%;
