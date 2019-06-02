@@ -19,10 +19,10 @@
   <header>
     <figure>
       <img src="Ressources/byarne.jpeg" alt="Logo" height="100" width="100">
-      <figcaption>Logo</figcaption>
+      <figcaption>Seminarverwaltung</figcaption>
     </figure>
   </header>
-  <nav>
+  <nav class="navigationsleiste">
     <ul>
       <li><a href="Seminare.html">Seminare</a></li>
       <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
@@ -47,21 +47,35 @@
           <td>14.05.2019</td>
           <td>A.E.01</td>
         </tr>
+        <tr>
+          <td><a href="DetailseiteSeminar.html">Unternehmensgründung</a></td>
+          <td>14.05.2019</td>
+          <td>A.E.01</td>
+        </tr>
+        <tr>
+          <td><a href="DetailseiteSeminar.html">Unternehmensgründung</a></td>
+          <td>14.05.2019</td>
+          <td>A.E.01</td>
+        </tr>
+        <tr>
+          <td><a href="DetailseiteSeminar.html">Unternehmensgründung</a></td>
+          <td>14.05.2019</td>
+          <td>A.E.01</td>
+        </tr>
       </tbody>
     </table>
     <br>
     <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="GET">
       <label>Seminartitel:
-        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege">
+        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege" pattern="*[0-20]">
         <datalist id="vorschlaege">
-          <option value="Unternehmensgründun">
+          <option value="Unternehmensgruendu">
         </datalist>
       </label>
       <button type="submit">Finden</button>
     </form>
-    <hr>
   </main>
-  <footer>&COPY;by Kevin Gottwald & Jannik Will</footer>
+  <footer class="copyright"><span>&COPY; by Kevin Gottwald & Jannik Will</span></footer>
 </body>
 
 </html>

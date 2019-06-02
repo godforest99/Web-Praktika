@@ -1,13 +1,23 @@
-h1, h2, figcaption {
-  color: purple;
+* {
+  font-family: Arial;
 }
 
 body {
   margin: 0px;
 }
 
+h1, h2, figcaption {
+  color: purple;
+}
+
 main {
   margin: 5px;
+}
+
+/* header styles: */
+
+header {
+  background-color: #D3D3D3;
 }
 
 header>figure{
@@ -24,13 +34,28 @@ figcaption {
   font-size: 80px;
 }
 
-header {
-  background-color: #D3D3D3;
+#Seminarliste>thead>tr{
+  background-color: green;
 }
+
+#Seminarliste>tbody tr:nth-of-type(2n){
+  background-color: yellow;
+}
+
+/* main stlyes: */
 
 section {
   margin-bottom: 15px;
 }
+
+.copyright {
+  border-top: 2px solid darkgrey;
+  padding: 10px 5px;
+}
+
+
+
+
 
 input:required {
   color: rgb(204, 8, 211);
@@ -40,27 +65,27 @@ input:valid {
   background-color: rgb(134, 255, 140);
 }
 
-nav {
+.navigationsleiste {
   padding: 0px;
   margin: 0px;
   background-color: grey;
   height: 35px;
 }
 
-nav>ul {
+.navigationsleiste>ul {
   padding: 0px;
   height: 100%;
   margin: 0px;
 }
 
-nav>ul>li{
+.navigationsleiste>ul>li{
   display: inline-block;
   height: 100%;
   margin-left: 5px;
   /* background-color: #A9A9A9; */
 }
 
-nav a {
+.navigationsleiste a {
   color: white;
   text-decoration: none;
   position: relative;
@@ -90,14 +115,14 @@ fieldset label {
   padding-bottom: 5px;
 }
 
-nav>p>a:hover{
+.navigationsleiste li>a:hover{
   color: yellow;
 }
 
 /* [label*="Titel des Seminars"]::after { */
   /* content: "test"; */
 /* } */
-footer.Zusatzinfos{
+footer.zusatzinfos{
   background: lightcoral;
   margin: 3px;
   padding: 3px;
@@ -108,16 +133,13 @@ footer.Zusatzinfos{
   /* background-color: lightcoral; */
 /* } */
 
-* {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-[title*="Email"]::after {
-  position:absolute;
-  top: 300px;
-  left: 210px;
-  content: url(Ressources/index.png);
+a[href*="mailto:"]::after {
+  content: "";
+  background-image: url(Ressources/index.png);
   display: inline-block;
-  transform: scale(.2);
+  background-size: 1.5em 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  margin-left: 1.2em;
 
 }
