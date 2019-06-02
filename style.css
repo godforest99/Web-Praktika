@@ -59,9 +59,13 @@ section {
   box-sizing: border-box;
 }
 
-.copyright {
+footer.copyright {
   border-top: 2px solid darkgrey;
   padding: 10px 5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 
