@@ -7,17 +7,18 @@
   <!--Grundaufbau HTML-->
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
 </head>
 
 
-<body>
-  <header>
+<body class="grid-container">
+  <header class="grid-item-3columns">
     <figure>
       <a href="Seminare.html"><img src="Ressources/byarne.jpeg" alt="Logo" height="100" width="100"></a>
       <figcaption>Seminarverwaltung</figcaption>
     </figure>
   </header>
-  <nav class="navigationsleiste">
+  <nav class="navigationsleiste grid-item-3columns">
     <ul>
       <li><a href="Seminare.html">Seminare</a></li>
       <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
@@ -25,7 +26,7 @@
       <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
     </ul>
   </nav>
-  <main>
+  <main class="grid-item-2columns">
     <section>
       <picture id="seminarleiterBild">
         <source media="(min-width: 650px)" srcset="Ressources/ProfilBildSeminarleiter.jpg" type="image/jpg">
