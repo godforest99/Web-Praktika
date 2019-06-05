@@ -1,4 +1,4 @@
-aside {
+aside, nav {
   display: none;
 }
 
@@ -7,7 +7,6 @@ aside {
   margin: 10px;
   justify-content: center;
   align-items: center;
-  width: 100;
    height: calc(100vh - 178px);  /*-header+nav+footer height */
    flex-flow: row wrap;
 }
@@ -17,24 +16,22 @@ aside {
   height: 200px;
   text-align: center;
   flex: 1 1 auto;
+  margin: 10px;
 }
 
-.flex-item p {
+.flex-item p{
   margin: 10px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-<<<<<<< HEAD
   color: white;
-}
-
-nav {
-  display: none;
-=======
->>>>>>> 022fc97d11718f67b80048ee5d8151052b71439c
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
   color: black;
 }
