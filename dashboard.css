@@ -1,0 +1,16 @@
+aside {
+  display: none;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+.grid-item {
+  background-color: grey;
+  text-align: center;
+}
