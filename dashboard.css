@@ -25,11 +25,14 @@ aside {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+<<<<<<< HEAD
   color: white;
 }
 
 nav {
   display: none;
+=======
+>>>>>>> 022fc97d11718f67b80048ee5d8151052b71439c
 }
 
 a {
