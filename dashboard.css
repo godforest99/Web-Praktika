@@ -3,14 +3,31 @@ aside {
 }
 
 .grid-container {
+  margin: 0px;
   display: inline-grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 15px;
   justify-items: center;
   align-items: center;
+  width: 100%;
+   height: calc(100vh - 178px);  /*-header+nav+footer height */
 }
 .grid-item {
   background-color: grey;
+  width: 200px;
+  height: 200px;
   text-align: center;
+}
+
+.grid-item p {
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
