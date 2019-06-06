@@ -1,183 +1,156 @@
-
+/* General: */
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
-
-body {
-  margin: 0px;
-}
-
 h1, h2, figcaption {
+  background-color: inherit;
   color: purple;
 }
-
 h1 {
   text-decoration: underline;
   text-decoration-color: purple;
 }
-
-main {
-  margin: 5px;
-}
-
-/* header styles: */
-
-header {
-  background-color: #D3D3D3;
-}
-
-header>figure{
+body {
   margin: 0px;
-  padding: 5px;
 }
-
-header figcaption {
-  position: absolute;
-  top: 5vh;
-  left: 115px;
-  color: white;
-  font-weight: bold;
-  font-size: 3.5vw;
-
-  text-shadow: 5px 5px 5px black;
-  letter-spacing: 5px;
-}
-
-#seminarliste {
-  margin-bottom: 10px;
-}
-
-#seminarliste>thead>tr{
-  background-color: green;
-}
-
-#seminarliste>tbody tr:nth-of-type(2n){
-  background-color: yellow;
-}
-
-/* main stlyes: */
-
 section {
   margin-bottom: 15px;
   border-left: 5px solid grey;
   padding-left: 5px;
   box-sizing: border-box;
 }
-
-footer.copyright {
-  border-top: 2px solid darkgrey;
-  background-color: white;
-  padding: 10px 5px;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+.clearBoth {
+  clear: both;
 }
+  /* Seminarformular.html */
+  div.required::after {
+    content: " (erforderliche Eingabe)";
+  }
+  fieldset, legend {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+    fieldset>div {
+    margin: 0.3rem;
+    padding-bottom: 5px;
+  }
+    fieldset>legend{
+    background-color: blue;
+    font-style: italic;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+  }
+  /* DetailseiteSeminarleiter.html: */
+  a[href*="mailto:"]::after {
+    content: "";
+    background-image: url(Ressources/index.png);
+    display: inline-block;
+    background-size: 1.5em 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 1.2em;
 
-
-
-
-
+  }
+/* Header: */
+header {
+  background-color: #D3D3D3;
+  color: inherit;
+}
+  header>figure{
+    margin: 0px;
+    padding: 5px;
+  }
+    header figcaption {
+    position: absolute;
+    top: 5vh;
+    left: 115px;
+    color: white;
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-shadow: 5px 5px 5px black;
+    letter-spacing: 5px;
+  }
 input:required {
   border: 2px solid rgb(204, 8, 211);
 }
-
 input:valid {
   background-color: rgb(134, 255, 140);
+  color: inherit;
 }
-
+input:invalid {
+  background-color: rgb(252, 115, 115);
+  color: inherit;
+}
+/* Navigation bar */
 nav.navigationsleiste {
   padding: 0px;
   margin: 0px;
   height: auto;
   background-color: grey;
+  color: inherit;
 }
-
-.navigationsleiste>ul {
+  nav.navigationsleiste>ul {
   display: block;
   padding: 0px;
   height: auto;
   margin: 0px;
 }
-
-#seminarleiterBild {
-  float: right;
-  margin-bottom: 16.92px;
-}
-
-.clearBoth {
-  clear: both;
-}
-
-.navigationsleiste>ul>li{
-  display: inline-block;
-  height: 35px;
-  margin-left: 10px;
-  /* background-color: #A9A9A9; */
-}
-
-nav.navigationsleiste a {
+    nav.navigationsleiste>ul>li{
+    display: inline-block;
+    height: 35px;
+    margin-left: 10px;
+  }
+      nav.navigationsleiste a {
   color: white;
+  background-color: inherit;
   text-decoration: none;
   position: relative;
   top: 8px;
 }
-
-input:invalid {
-  background-color: rgb(252, 115, 115);
-}
-
-fieldset>div {
-  margin: 0.3rem;
-}
-
-/* FIXME: Funktiorniert noch nicht wie ich es mir vorgestellt habe */
-div.required::after {
-  content: " (erforderliche Eingabe)";
-}
-
-fieldset, legend {
-  padding: 5px;
-  border: 1px solid black;
-  border-radius: 8px;
-}
-
-fieldset>legend{
-  background-color: blue;
-  font-style: italic;
-  color: white;
-  box-shadow: 2px 2px 2px black;
-}
-
-fieldset div {
-  padding-bottom: 5px;
-}
-
-nav.navigationsleiste li>a:hover{
+        nav.navigationsleiste li>a:hover{
   color: yellow;
+  background-color: inherit;
 }
-
-/* [label*="Titel des Seminars"]::after { */
-  /* content: "test"; */
-/* } */
+/* Main: */
+main {
+  margin: 5px;
+}
+  /* Semianarliste.html: */
+  #seminarliste {
+    margin-bottom: 10px;
+  }
+    #seminarliste>thead>tr{
+    background-color: green;
+    color: inherit;
+  }
+    #seminarliste>tbody tr:nth-of-type(2n){
+    background-color: yellow;
+    color: inherit;
+  }
+  /* DetailseiteSeminarleiter.html: */
+  #seminarleiterBild {
+    float: right;
+    margin-bottom: 16.92px;
+  }
+/* Aside: */
 aside.zusatzinfos{
-  background: lightcoral;
+  background-color: lightcoral;
+  color: inherit;
   margin: 3px;
   padding: 3px;
   border: 2px dotted;
   clear: both;
 }
-/* [title*="Zusatzinfos"] { */
-  /* background-color: lightcoral; */
-/* } */
-
-a[href*="mailto:"]::after {
-  content: "";
-  background-image: url(Ressources/index.png);
-  display: inline-block;
-  background-size: 1.5em 1.5em;
-  height: 1.5em;
-  width: 1.5em;
-  margin-left: 1.2em;
-
+/* Footer: */
+footer.copyright {
+  border-top: 2px solid darkgrey;
+  background-color: white;
+  color: inherit;
+  padding: 10px 5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
