@@ -79,7 +79,7 @@ footer.copyright {
 
 
 input:required {
-  color: rgb(204, 8, 211);
+  border: 2px solid rgb(204, 8, 211);
 }
 
 input:valid {
