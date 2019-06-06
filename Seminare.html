@@ -34,6 +34,15 @@
   <div class="containerRow">
   <main>
     <h1>Seminare</h1>
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="GET">
+      <label>Seminartitel:
+        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege" pattern="*[0-20]">
+        <datalist id="vorschlaege">
+          <option value="Unternehmensgruendu">
+        </datalist>
+      </label>
+      <button type="submit">Finden</button>
+    </form>
       <h2>Seminarliste</h2>
       <table id="seminarliste">
         <thead>
@@ -66,15 +75,7 @@
           </tr>
         </tbody>
       </table>
-    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="GET">
-      <label>Seminartitel:
-        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege" pattern="*[0-20]">
-        <datalist id="vorschlaege">
-          <option value="Unternehmensgruendu">
-        </datalist>
-      </label>
-      <button type="submit">Finden</button>
-    </form>
+
   </main>
   <aside class="zusatzinfos">
     <h2 title="Zusatzinfos">Zusatzinfos</h2>
