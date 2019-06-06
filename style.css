@@ -105,10 +105,6 @@ nav.navigationsleiste {
   margin-bottom: 16.92px;
 }
 
-.zusatzinfos {
-  clear: both;
-}
-
 .clearBoth {
   clear: both;
 }
@@ -165,11 +161,12 @@ nav.navigationsleiste li>a:hover{
 /* [label*="Titel des Seminars"]::after { */
   /* content: "test"; */
 /* } */
-.zusatzinfos{
+aside.zusatzinfos{
   background: lightcoral;
   margin: 3px;
   padding: 3px;
   border: 2px dotted;
+  clear: both;
 }
 /* [title*="Zusatzinfos"] { */
   /* background-color: lightcoral; */
