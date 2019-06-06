@@ -43,15 +43,15 @@ header figcaption {
   letter-spacing: 5px;
 }
 
-#Seminarliste {
+#seminarliste {
   margin-bottom: 10px;
 }
 
-#Seminarliste>thead>tr{
+#seminarliste>thead>tr{
   background-color: green;
 }
 
-#Seminarliste>tbody tr:nth-of-type(2n){
+#seminarliste>tbody tr:nth-of-type(2n){
   background-color: yellow;
 }
 
@@ -120,7 +120,7 @@ nav.navigationsleiste {
   /* background-color: #A9A9A9; */
 }
 
-.navigationsleiste a {
+nav.navigationsleiste a {
   color: white;
   text-decoration: none;
   position: relative;
@@ -158,7 +158,7 @@ fieldset div {
   padding-bottom: 5px;
 }
 
-.navigationsleiste li>a:hover{
+nav.navigationsleiste li>a:hover{
   color: yellow;
 }
 
