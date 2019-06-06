@@ -9,22 +9,30 @@ nav, main{
 
 }
 
-.containerRow {
+.containerMainAndASide {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
     flex-flow: nowrap;
 
 }
-.containerRow2{
+.containerMain {
     display: flex;
     flex-direction:column;
+    width: 70%;
+
+}
+
+.containerMainAndASide>aside {
+  width: 30%;
+}
+
+.flex-Items {
+  justify-content: space-evenly;
 }
 
 .container>main{
     margin-left: 10px;
-
 }
 
 .container>.zusatzinfos{
