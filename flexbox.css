@@ -13,7 +13,13 @@ nav, main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: flex-start;
+    flex-flow: nowrap;
 
+}
+.containerRow2{
+    display: flex;
+    flex-direction:column;
 }
 
 .container>main{
@@ -22,6 +28,7 @@ nav, main{
 }
 
 .container>.zusatzinfos{
+    flex-flow: nowrap;
     margin-right: 10px;
 
 }
