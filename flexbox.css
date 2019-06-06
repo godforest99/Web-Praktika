@@ -2,18 +2,26 @@ nav, main{
     background-color:silver;
 
 }
-#container {
+.containerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.containerRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
-#container>main{
+
+.container>main{
     margin-left: 10px;
-    width: 500%;
 
 }
-#container>.zusatzinfos{
+
+.container>.zusatzinfos{
     margin-right: 10px;
-    width: 200%;
+
 }
