@@ -5,7 +5,7 @@ aside, nav {
 .flexbox {
   display: flex;
   margin: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
    height: calc(100vh - 178px);  /*-header+nav+footer height */
    flex-flow: row wrap;
