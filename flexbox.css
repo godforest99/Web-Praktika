@@ -40,3 +40,23 @@ nav, main{
     margin-right: 10px;
 
 }
+
+@media (max-width:768px) {
+  .containerMainAndASide {
+    flex-direction: column;
+  }
+
+  .containerMain, aside.zusatzinfos {
+    width: 100vw;
+  }
+
+  aside.zusatzinfos{
+    margin-bottom: 39px;
+  }
+
+  main.containerMain {
+    margin-right: 0px;
+  }
+
+
+}
