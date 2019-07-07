@@ -68,7 +68,7 @@ header {
     color: white;
     background-color: inherit;
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: 50px;
     text-shadow: 5px 5px 5px black;
     letter-spacing: 5px;
   }
@@ -153,4 +153,15 @@ footer.copyright {
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+@media (max-width: 768px) {
+  header figcaption {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header figcaption {
+    display: none;
+  }
 }
