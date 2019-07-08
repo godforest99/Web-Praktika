@@ -15,8 +15,8 @@ function Seminar(titel, name, ort,startzeit, endzeit,
     this.getBplaetze = function(){return this.gesamtePlaetze - this.freiePlaetze};
   }
   
-var seminar1 = new Seminar("Test", "aha", "dortmund",new Date(2019,01,20,12,00), new Date(2019,01,20,14,00), 10, 22, "amk1")
-var seminar2 = new Seminar("Test2", "ahja", "dortmund", new Date(2019,02,20,12,00), new Date(2019,02,20,15,00), 5, 20,"bruh")
+var seminar1 = new Seminar("Test", "aha", "dortmund",new Date(2019,01-1,20,12,00), new Date(2019,01,20,14,00), 10, 22, "amk1")
+var seminar2 = new Seminar("Test2", "ahja", "dortmund", new Date(2019,02-1,20,12,00), new Date(2019,02,20,15,00), 5, 20,"bruh")
 let seminare = new Array(2);
 seminare.push(seminar1, seminar2);
 seminare.sort(function(x, y){ return x-y;})
