@@ -92,8 +92,10 @@ const url = req.url;
             });
         }
     } else {
-        res.writeHead(404, {'Content-Type': 'text/html'});
-        res.end("ERROR 404 Not Found");
+        fs.readFile('public/404.html',function(err, data){
+            res.writeHead(200, {'Content-Type': 'text/html'});
+        res.end(data);
+        });
     }
     console.log(req.url);
         
