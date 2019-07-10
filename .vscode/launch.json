@@ -9,8 +9,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/praktikum12/seminarApp-v1/server.js",
-            "cwd": "${workspaceFolder}/praktikum12/seminarApp-v1/"
+            "program": "${workspaceFolder}/praktikum12/seminarApp-v2/app.js",
+            "cwd": "${workspaceFolder}/praktikum12/seminarApp-v2/"
         }
     ]
 }

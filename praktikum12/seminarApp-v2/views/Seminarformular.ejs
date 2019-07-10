@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Seminarformular</title>
+
+  <!--Grundaufbau HTML-->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type = "text/css" href ="style.css">
+  <link rel="stylesheet" type = "text/css" href ="grid.css">
+</head>
+
+
+<body class="grid-container">
+  <header>
+    <figure>
+      <a href="Dashboard.html"><img src="Ressources/byarne.png" alt="Logo" width="100"></a>        <figcaption>Seminarverwaltung</figcaption>
+    </figure>
+  </header>
+  <nav class="navigationsleiste">
+    <ul>
+      <li><a href="Seminare.html">Seminare</a></li>
+      <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
+      <li><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </li>
+      <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
+    </ul>
+  </nav>
+  <main class="grid-item-2columns">
+    <h1>Anlegen eines Seminares</h1>
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
+      <fieldset>
+        <legend>Seminar</legend>
+      <div class="required">
+        <label>Titel des Semiars: <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Titel eingeben" required autofocus pattern="[A-Z]\w{0,19}" title="Der erste Buchstabe muss ein Großbuchstabe sein"></label>
+      </div>
+      <div>
+      <label>Seminarleiter:
+        <select name="semlead">
+          <option value="Herr Frenkel">Herr Frenkel</option>
+          <option value="Frau Gröner">Uschi</option>
+          <option value="Herr Rettinger">Herr Rettinger</option>
+        </select>
+      </label>
+      </div>
+      <div>
+        <label>Datum: <input type="date" value="2019-04-27" min="2019-04-27" max="2019-12-31" name="semdate"></label>
+      </div>
+      <div>
+        <label>Start: <input type="time" name="semstart" value="12:00" min="08:00" max="16:00"> </label>
+      </div>
+      <div>
+        <label>Ende: <input type="time" value="13:00" name="semend" min="10:00" max="18:00"> </label>
+      </div>
+      <div>
+        <label>Anzahl verfügbarer Plätze: <input type="number" name="semseats" value="5" min="5" max="50"> </label>
+      </div>
+      <div><label>Tutoren: <input type="text" name="semtutors" pattern="[a-zA-Z]{2,4}\d{1}(,{1}[a-zA-Z]{2,4}\d{1})*" title="Geben sie 2-4 Zeichen ein, gefolgt von einer Zahl"> </label> </div>
+      </fieldset>
+      <button type="submit">Senden</button>
+    </form>
+  </main>
+
+  <aside class="zusatzinfos">
+    <h2 title="Zusatzinfos">Zusatzinfos</h2>
+
+    <ul>
+      <li>Datum:... Meldung:...</li>
+
+    </ul>
+  </aside>
+
+  <footer class="copyright"><span>&COPY; by Kevin Gottwald & Jannik Will</span></footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Seminare</title>
+
+  <!--Grundaufbau HTML usw...-->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type = "text/css" href ="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/flexbox.css">
+  <!-- <style media="screen">
+    datalist {
+      display: inline;
+    }
+  </style> -->
+
+</head>
+
+<body class="containerColumn">
+  <header>
+    <figure>
+      <a href="Dashboard.html"><img src="Ressources/byarne.png" alt="Logo" width="100"></a>        <figcaption>Seminarverwaltung</figcaption>
+    </figure>
+  </header>
+  <nav class="navigationsleiste">
+    <ul>
+      <li><a href="Seminare.html">Seminare</a></li>
+      <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
+      <li><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </li>
+      <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
+    </ul>
+  </nav>
+  <div class="containerMainAndASide">
+  <main class ="containerMain flex-Items">
+    <h1>Seminare</h1>
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="GET">
+      <label>Seminartitel:
+        <input type="text" name="semtitle" size="20" maxlength="20" placeholder="Suche" list="vorschlaege" pattern="*[0-20]">
+        <datalist id="vorschlaege">
+          <option value="Unternehmensgruendu">
+        </datalist>
+      </label>
+      <button type="submit">Finden</button>
+    </form>
+      <h2>Seminarliste</h2>
+      <table id="seminarliste">
+        <thead>
+          <tr>
+            <th>Titel</th>
+            <th>Datum</th>
+            <th>Ort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let seminar in seminare){ %>
+            <tr>
+                <td><%= seminar.titel %></td>
+                <td><%= seminar.startzeit.getDate() %>.<%= seminar.startzeit.getMonth()+1 %>.<%= seminar.startzeit.getFullYear() %></td>
+                <td><%= seminar.ort %></td>
+            </tr>
+         <% }; %>
+        </tbody>
+      </table>
+
+  </main>
+  <aside class="zusatzinfos">
+    <h2 title="Zusatzinfos">Zusatzinfos</h2>
+
+    <ul>
+      <li>Datum:... Meldung:...</li>
+
+    </ul>
+  </aside>
+</div>
+  <footer class="copyright"><span>&COPY; by Kevin Gottwald & Jannik Will</span></footer>
+  <script type="text/javascript" src="public/js/script.js">
+    
+  </script>
+</body>
+
+</html>

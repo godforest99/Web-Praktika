@@ -115,7 +115,7 @@ function Seminar(titel, name, ort,startzeit, endzeit,
      this.titel=titel;
      this.name=name;
      this.ort=ort;
-     this.startzeit=new Dlsate(startzeit);
+     this.startzeit=new Date(startzeit);
      this.endzeit=new Date(endzeit);
      this.freiePlaetze=freiePlaetze;
      this.gesamtePlaetze=gesamtePlaetze;
