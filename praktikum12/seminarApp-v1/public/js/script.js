@@ -38,7 +38,7 @@ let createTda = function(content) {
 }
 let tbody = document.querySelector("tbody");
 
-seminare.forEach (seminar=>{
+/*seminare.forEach (seminar=>{
 let tr = document.createElement("tr");
 let a = document.createElement("a");
 a.href = "DetailseiteSeminar.html";
@@ -46,7 +46,7 @@ a.textContent = seminar.name;
 
 tr.append(createTda(a), createTd(seminar.startzeit.toLocaleDateString()), createTd(seminar.ort))
 tbody.append(tr);
-});
+});*/
 
 
 
