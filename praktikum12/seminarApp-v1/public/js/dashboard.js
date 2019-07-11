@@ -10,10 +10,11 @@ kachel.addEventListener("click", function(){
     p.textContent = titel;
     let main = document.querySelector("main");
     
-    main.append(a);
-    a.append(div);
-    div.append(p);
-    
+    if(titel&&url!=null){
+        main.append(a);
+        a.append(div);
+        div.append(p);
+    }
     
     
 })
