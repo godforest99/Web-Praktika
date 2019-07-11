@@ -6,24 +6,17 @@
 
   <!--Grundaufbau HTML-->
   <meta charset="utf-8">
-  <link rel="stylesheet" type = "text/css" href ="style.css">
-  <link rel="stylesheet" type = "text/css" href ="grid.css">
+  <link rel="stylesheet" type = "text/css" href ="css/style.css">
+  <link rel="stylesheet" type = "text/css" href ="css/grid.css">
 </head>
 
 
 <body class="grid-container">
   <header>
-    <figure>
-      <a href="Dashboard.html"><img src="Ressources/byarne.png" alt="Logo" width="100"></a>        <figcaption>Seminarverwaltung</figcaption>
-    </figure>
-  </header>
+      <%- include('Header'); %>
+    </header>
   <nav class="navigationsleiste">
-    <ul>
-      <li><a href="Seminare.html">Seminare</a></li>
-      <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
-      <li><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </li>
-      <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
-    </ul>
+    <%- include('Nav'); %>
   </nav>
   <main class="grid-item-2columns">
     <h1>Anlegen eines Seminares</h1>
@@ -61,15 +54,10 @@
   </main>
 
   <aside class="zusatzinfos">
-    <h2 title="Zusatzinfos">Zusatzinfos</h2>
-
-    <ul>
-      <li>Datum:... Meldung:...</li>
-
-    </ul>
+    <%- include('Aside') %>
   </aside>
 
-  <footer class="copyright"><span>&COPY; by Kevin Gottwald & Jannik Will</span></footer>
+  <footer class="copyright"><%- include('Footer') %></footer>
 </body>
 
 </html>

@@ -6,8 +6,8 @@
 
   <!--Grundaufbau HTML usw...-->
   <meta charset="utf-8">
-  <link rel="stylesheet" type = "text/css" href ="public/css/style.css">
-  <link rel="stylesheet" type="text/css" href="public/css/flexbox.css">
+  <link rel="stylesheet" type = "text/css" href ="css/style.css">
+  <link rel="stylesheet" type="text/css" href="ss/flexbox.css">
   <!-- <style media="screen">
     datalist {
       display: inline;
@@ -18,17 +18,10 @@
 
 <body class="containerColumn">
   <header>
-    <figure>
-      <a href="Dashboard.html"><img src="Ressources/byarne.png" alt="Logo" width="100"></a>        <figcaption>Seminarverwaltung</figcaption>
-    </figure>
-  </header>
+      <%- include('Header'); %>
+    </header>
   <nav class="navigationsleiste">
-    <ul>
-      <li><a href="Seminare.html">Seminare</a></li>
-      <li><a href="DetailseiteSeminar.html"> Detailseite Seminar </a></li>
-      <li><a href="DetailseiteSeminarleiter.html">Seminarleiter</a> </li>
-      <li><a href="Seminarformular.html">Neues Seminar anlegen</a></li>
-    </ul>
+    <%- include('Nav'); %>
   </nav>
   <div class="containerMainAndASide">
   <main class ="containerMain flex-Items">
@@ -64,16 +57,11 @@
 
   </main>
   <aside class="zusatzinfos">
-    <h2 title="Zusatzinfos">Zusatzinfos</h2>
-
-    <ul>
-      <li>Datum:... Meldung:...</li>
-
-    </ul>
+    <%- include('Aside') %>
   </aside>
 </div>
-  <footer class="copyright"><span>&COPY; by Kevin Gottwald & Jannik Will</span></footer>
-  <script type="text/javascript" src="public/js/script.js">
+  <footer class="copyright"><%- include('Footer') %></footer>
+  <script type="text/javascript" src="js/script.js">
     
   </script>
 </body>

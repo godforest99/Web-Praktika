@@ -7,9 +7,5 @@ router.get('/', function(req, res, next) {
   res.render('Dashboard');
   next;
 });
-router.get('/Dashboard.html', function(req, res, next) {
-  res.render('Dashboard');
-  res.end();
-});
 
 module.exports = router;

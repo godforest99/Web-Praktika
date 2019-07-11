@@ -3,7 +3,7 @@ const router = express.Router();
 const model = require('./../models/seminarData.js');
 
 /* GET home page. */
-router.get('/DetailseiteSeminar.html', function(req, res, next) {
+router.get('/seminardetail', function(req, res, next) {
   res.render('DetailseiteSeminar');
 });
 
