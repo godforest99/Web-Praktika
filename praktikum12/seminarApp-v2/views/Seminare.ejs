@@ -45,7 +45,7 @@
           </tr>
         </thead>
         <tbody>
-          <% for (let seminar in seminare){ %>
+          <% for (let seminar of seminare){ %>
             <tr>
                 <td><%= seminar.titel %></td>
                 <td><%= seminar.startzeit.getDate() %>.<%= seminar.startzeit.getMonth()+1 %>.
