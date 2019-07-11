@@ -21,7 +21,7 @@ app.get('/seminarliste', seminare);
 app.get('/seminardetail', detailseiteSeminar);
 app.get('/seminarleiter', detailseiteSeminarleiter);
 app.get('/seminarneu', seminarformular);
-app.get(error404);
+app.use(error404);
 app.listen(8040, function(){
     console.log("Lausche auf Port 8040");
 });
