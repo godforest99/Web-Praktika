@@ -48,7 +48,8 @@
           <% for (let seminar in seminare){ %>
             <tr>
                 <td><%= seminar.titel %></td>
-                <td><%= seminar.startzeit.getDate() %>.<%= seminar.startzeit.getMonth()+1 %>.<%= seminar.startzeit.getFullYear() %></td>
+                <td><%= seminar.startzeit.getDate() %>.<%= seminar.startzeit.getMonth()+1 %>.
+                <%= seminar.startzeit.getFullYear() %></td>
                 <td><%= seminar.ort %></td>
             </tr>
          <% }; %>
