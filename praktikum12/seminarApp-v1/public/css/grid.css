@@ -34,6 +34,11 @@ aside {
   grid-area: aside;
 }
 
+main img {
+  min-width: 70%;
+  height: auto;
+}
+
 @media (max-width:768px) {
   .grid-container {
     grid-template-areas: "header header"
@@ -55,6 +60,6 @@ aside {
 
   main.grid-container-main>picture>img{
     position: relative;
-    left: 30%;
+    left: 15%;
   }
 }
